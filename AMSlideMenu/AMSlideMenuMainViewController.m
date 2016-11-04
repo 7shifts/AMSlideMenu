@@ -77,6 +77,7 @@ static NSMutableArray *allInstances;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    allInstances = nil // Added for logout/relogin mainvc issues
     if (!allInstances)
     {
         allInstances = [NSMutableArray array];
